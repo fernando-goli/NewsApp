@@ -8,11 +8,13 @@
         <entry key="..\:/Users/Fernando/AndroidStudioProjects/Projetos-Cursos-DIO/NewsApp/app/src/main/res/drawable/ic_favorite.xml" value="0.2916666666666667" />
         <entry key="..\:/Users/Fernando/AndroidStudioProjects/Projetos-Cursos-DIO/NewsApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2916666666666667" />
         <entry key="..\:/Users/Fernando/AndroidStudioProjects/Projetos-Cursos-DIO/NewsApp/app/src/main/res/layout/activity_main.xml" value="0.2805128205128205" />
+        <entry key="..\:/Users/Fernando/AndroidStudioProjects/Projetos-Cursos-DIO/NewsApp/app/src/main/res/layout/activity_news.xml" value="0.28489583333333335" />
         <entry key="..\:/Users/Fernando/AndroidStudioProjects/Projetos-Cursos-DIO/NewsApp/app/src/main/res/layout/fragment_article.xml" value="0.2805128205128205" />
         <entry key="..\:/Users/Fernando/AndroidStudioProjects/Projetos-Cursos-DIO/NewsApp/app/src/main/res/layout/fragment_breaking_news.xml" value="0.2805128205128205" />
         <entry key="..\:/Users/Fernando/AndroidStudioProjects/Projetos-Cursos-DIO/NewsApp/app/src/main/res/layout/fragment_saved_news.xml" value="0.2805128205128205" />
         <entry key="..\:/Users/Fernando/AndroidStudioProjects/Projetos-Cursos-DIO/NewsApp/app/src/main/res/layout/fragment_search_news.xml" value="0.2805128205128205" />
         <entry key="..\:/Users/Fernando/AndroidStudioProjects/Projetos-Cursos-DIO/NewsApp/app/src/main/res/layout/item_article_preview.xml" value="0.2805128205128205" />
+        <entry key="..\:/Users/Fernando/AndroidStudioProjects/Projetos-Cursos-DIO/NewsApp/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.28489583333333335" />
       </map>
     </option>
   </component>

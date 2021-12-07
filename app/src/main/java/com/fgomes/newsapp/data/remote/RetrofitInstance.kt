@@ -1,6 +1,5 @@
-package com.fgomes.newsapp.data.remote
-
-import com.fgomes.newsapp.data.util.Constants.BASE_URL
+import com.fgomes.newsapp.data.remote.NewsApi
+import com.fgomes.newsapp.util.Constants.BASE_URL
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -12,11 +11,9 @@ class RetrofitInstance {
         private val retrofit by lazy {
             val logging = HttpLoggingInterceptor()
             logging.setLevel(HttpLoggingInterceptor.Level.BODY)
-
             val client = OkHttpClient.Builder()
                 .addInterceptor(logging)
                 .build()
-
             Retrofit.Builder()
                 .baseUrl(BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())

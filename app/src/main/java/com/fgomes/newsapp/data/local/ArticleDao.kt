@@ -2,7 +2,7 @@ package com.fgomes.newsapp.data.local
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.fgomes.newsapp.data.model.Article
+import com.fgomes.newsapp.data.models.Article
 
 @Dao
 interface ArticleDao {

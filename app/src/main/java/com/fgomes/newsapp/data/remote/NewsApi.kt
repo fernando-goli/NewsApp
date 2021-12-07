@@ -1,7 +1,7 @@
 package com.fgomes.newsapp.data.remote
 
-import com.fgomes.newsapp.data.model.NewsResponse
-import com.fgomes.newsapp.data.util.Constants.API_KEY
+import com.fgomes.newsapp.data.models.NewsResponse
+import com.fgomes.newsapp.util.Constants.API_KEY
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query

@@ -2,7 +2,7 @@ package com.fgomes.newsapp.data.local
 
 import android.content.Context
 import androidx.room.*
-import com.fgomes.newsapp.data.model.Article
+import com.fgomes.newsapp.data.models.Article
 
 @Database(
     entities = [Article::class],

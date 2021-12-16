@@ -1,22 +1,19 @@
 package com.fgomes.newsapp.domain.repository
 
-import com.fgomes.newsapp.data.local.ArticleDatabase
+import androidx.lifecycle.LiveData
 import com.fgomes.newsapp.data.models.Article
+import com.fgomes.newsapp.data.models.NewsResponse
+import retrofit2.Response
 
+interface NewsRepository {
 
-class NewsRepository(
-    val db: ArticleDatabase
-) {
-    suspend fun getBreakingNews(countryCode: String, pageNumber: Int) =
-        RetrofitInstance.api.getBreakingNews(countryCode, pageNumber)
+    suspend fun getBreakingNews(countryCode: String, pageNumber: Int): Response<NewsResponse>
 
-    suspend fun searchNews(searchQuery: String, pageNumber: Int) =
-        RetrofitInstance.api.searchForNews(searchQuery, pageNumber)
+    suspend fun searchNews(searchQuery: String, pageNumber: Int): Response<NewsResponse>
 
-    suspend fun upsert(article: Article) = db.getArticleDao().upsert(article)
+    suspend fun upsert(article: Article): Long
 
-    fun getSavedNews() = db.getArticleDao().getAllArticles()
+    fun getSavedNews(): LiveData<List<Article>>
 
-    suspend fun deleteArticle(article: Article) = db.getArticleDao().deleteArticle(article)
-
+    suspend fun deleteArticle(article: Article)
 }

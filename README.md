@@ -1,5 +1,7 @@
 # NewsApp
 
+App baseado na playlist https://www.youtube.com/playlist?list=PLQkwcJG4YTCRF8XiCRESq1IFFW8COlxYJ
+
 1 - Kotlin  
 2 - MVVM design pattern / Clean Architecture
 3 - Retrofit2  

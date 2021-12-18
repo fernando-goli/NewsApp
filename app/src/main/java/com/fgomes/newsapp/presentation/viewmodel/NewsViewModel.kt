@@ -32,7 +32,6 @@ class NewsViewModel(
     var newSearchQuery:String? = null
     var oldSearchQuery:String? = null
 
-
     init {
         getBreakingNews("us")
     }
@@ -61,9 +60,6 @@ class NewsViewModel(
         }
         return Resource.Error(response.message())
     }
-
-
-
 
     private fun handleSearchNewsResponse(response: Response<NewsResponse>) : Resource<NewsResponse> {
         if(response.isSuccessful) {

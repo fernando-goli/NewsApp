@@ -10,7 +10,7 @@ import retrofit2.Response
 
 class NewsRepositoryImpl (
     db: ArticleDatabase,
-    val serviceApi: NewsApi
+    private val serviceApi: NewsApi
     ) : NewsRepository{
 
     private val getArticleDao = db.getArticleDao()

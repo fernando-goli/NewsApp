@@ -7,7 +7,7 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.fgomes.newsapp.R
 import com.fgomes.newsapp.data.local.ArticleDatabase
-import com.fgomes.newsapp.domain.repository.NewsRepository
+import com.fgomes.newsapp.data.repository.NewsRepositoryImpl
 import com.fgomes.newsapp.presentation.viewmodel.NewsViewModel
 import com.fgomes.newsapp.presentation.viewmodel.NewsViewModelProviderFactory
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -22,7 +22,7 @@ class NewsActivity : AppCompatActivity() {
         //val binding = ActivityNewsBinding.inflate(layoutInflater)
         setContentView(R.layout.activity_news)
 
-        val newsRepository = NewsRepository(ArticleDatabase(this))
+        val newsRepository = NewsRepositoryImpl(ArticleDatabase(this), RetrofitInstance.api )
         val viewModelProviderFactory = NewsViewModelProviderFactory(application, newsRepository)
         viewModel = ViewModelProvider(this, viewModelProviderFactory).get(NewsViewModel::class.java)
         //bottomNavigationView.setupWithNavController(newsNavHostFragment.findNavController())
